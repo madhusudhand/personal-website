@@ -1,0 +1,78 @@
+$bg-color: #64C7CC;
+
+.hexagon {
+	width: 90px;
+	height: 55px;
+	background: $bg-color;
+	position: relative;
+  margin: 5px;
+  float: left;
+  text-align: center;
+
+  &:before {
+  	content: "";
+  	position: absolute;
+  	top: -25px;
+  	left: 0;
+  	width: 0;
+  	height: 0;
+  	border-left: 45px solid transparent;
+  	border-right: 45px solid transparent;
+  	border-bottom: 25px solid $bg-color;
+  }
+
+  &:after {
+  	content: "";
+  	position: absolute;
+  	bottom: -25px;
+  	left: 0;
+  	width: 0;
+  	height: 0;
+  	border-left: 45px solid transparent;
+  	border-right: 45px solid transparent;
+  	border-top: 25px solid $bg-color;
+  }
+
+
+  .label {
+    margin-top: 18px;
+  }
+}
+
+
+
+.infinity {
+    position: relative;
+    width: 212px;
+    height: 100px;
+}
+
+.infinity:before,
+.infinity:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    border: 20px solid $bg-color;
+    -moz-border-radius: 50px 50px 0 50px;
+         border-radius: 50px 50px 0 50px;
+    -webkit-transform: rotate(-45deg);
+       -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+         -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+}
+
+.infinity:after {
+    left: auto;
+    right: 0;
+    -moz-border-radius: 50px 50px 50px 0;
+         border-radius: 50px 50px 50px 0;
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+}

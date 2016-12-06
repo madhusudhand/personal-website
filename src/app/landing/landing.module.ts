@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { LandingComponent } from './landing.component';
 import { SkillsComponent } from './skills/skills.component';
+import { SkillHexagonComponent } from './skill-hexagon/skill-hexagon.component';
 
 @NgModule({
   imports: [
@@ -13,7 +14,8 @@ import { SkillsComponent } from './skills/skills.component';
   ],
   declarations: [
     SkillsComponent,
-    LandingComponent
+    LandingComponent,
+    SkillHexagonComponent
   ]
 })
 export class LandingModule { }
